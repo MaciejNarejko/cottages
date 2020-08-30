@@ -8,11 +8,63 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
-    <title>Noclegi morze</title>
+    <title>Noclegi</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a href="#" class="navbar-brand">
+            <h3 class="mb-0">
+                <i class="fas fa-umbrella-beach"></i> Noclegi Bałtyk
+            </h3>
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa fa-calendar-check" aria-hidden="true"></i> Sprawdź Termin
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa fa-phone-alt" aria-hidden="true"></i> Zadzwoń
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa fa-location-arrow" aria-hidden="true"></i> Wyznacz Trasę
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="showcase" class="d-flex justify-content-center">
+        <div id="overlay"></div>
+        <div class="header text-white">
+            <p class="display-1">
+                Przyjedź juz dziś!
+            </p>
+            <p class="details display-7"> Marzysz o wypoczynku? Chcesz odpocząć? Przyjedź nad morze juz dziś! Zapoznaj
+                się z
+                ponziszą ofertą, sprawdź dostępność
+                terminów i skontaktuj się z nami! U nas pogoda jest zawsze! Zapraszamy do kontaktu!
+            </p>
+            <div class="row justify-content-center">
+                <button id="check" class="btn btn-lg btn-primary">Sprawdź Terminy</button>
+            </div>
+        </div>
+        <div class="circle" aria-hidden="true">
+            <a href="#down">
+                <i class="arrow fas fa-angle-double-down"></i>
+            </a>
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -21,6 +73,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
