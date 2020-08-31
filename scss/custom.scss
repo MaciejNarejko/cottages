@@ -1,8 +1,3 @@
-body {
-    background: white;
-    font-family: "Roboto", sans-serif;
-}
-
 .navbar {
     font-weight: 100;
     position: absolute;
@@ -72,13 +67,16 @@ i.arrow {
 
 div.header p {
     margin-top: 0;
+    text-align: center;
 
 }
 
 p.details {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    letter-spacing: 0.5px;
 }
 
 .arrow:hover {
@@ -103,3 +101,79 @@ p.details {
         transform: translateY(20px);
     }
 }
+
+div.footer {
+    height: 105px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    background-color: #212529;
+    color: white;
+}
+
+a#author {
+    text-decoration: none;
+    color: white;
+}
+
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 435px;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    height: 435px;
+    width: 435px;
+}
+
+section.findUs {
+    padding: 20px 20px;
+}
+
+div.left {
+    padding-left: 0;
+}
+
+.contactForm {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    background-color: #e9ecef;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .nav-item {
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand h3 {
+        font-size: 1.5rem;
+    }
+
+    .display-1 {
+        font-size: 4rem;
+    }
+
+    p.details {
+        font-size: 1.2rem;
+
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

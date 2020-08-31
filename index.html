@@ -25,19 +25,20 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto" data-toggle="modal" data-target="#checkTerm">
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fa fa-calendar-check" aria-hidden="true"></i> Sprawdź Termin
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="tel:+48729105924" class="nav-link">
                         <i class="fa fa-phone-alt" aria-hidden="true"></i> Zadzwoń
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="https://www.google.pl/maps/dir//54.7991403,17.6195335/@54.6341123,17.6349769,9.68z/data=!4m2!4m1!3e0"
+                        class="nav-link">
                         <i class="fa fa-location-arrow" aria-hidden="true"></i> Wyznacz Trasę
                     </a>
                 </li>
@@ -47,25 +48,125 @@
     <div id="showcase" class="d-flex justify-content-center">
         <div id="overlay"></div>
         <div class="header text-white">
-            <p class="display-1">
+            <p class=" title display-1">
                 Przyjedź juz dziś!
             </p>
             <p class="details display-7"> Marzysz o wypoczynku? Chcesz odpocząć? Przyjedź nad morze juz dziś! Zapoznaj
                 się z
-                ponziszą ofertą, sprawdź dostępność
+                ponizszą ofertą, sprawdź dostępność
                 terminów i skontaktuj się z nami! U nas pogoda jest zawsze! Zapraszamy do kontaktu!
             </p>
             <div class="row justify-content-center">
-                <button id="check" class="btn btn-lg btn-primary">Sprawdź Terminy</button>
+                <button id="check" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#checkTerm">Sprawdź
+                    Terminy</button>
             </div>
         </div>
+        <div class="modal fade" id="checkTerm" tabindex="-1" role="dialog" aria-labelledby="checkTerm"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="checkTerm">Zapytanie o dostępność</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Prosze podaj nam więcej szczegółów na temat Twojego przyjazdu. Odezwiemy się najszybciej jak to
+                        będzie mozliwe.
+                        <br><br>
+
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Email</label>
+                                <input type="email" class="form-control" id="formGroupEmail"
+                                    placeholder="nazwa@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupDateFrom">Data Przyjazdu</label>
+                                <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input"
+                                        data-target="#datetimepicker4" />
+                                    <div class="input-group-append" data-target="#datetimepicker4"
+                                        data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupDateTo">Data Wyjazdu</label>
+                                <div class="input-group date" id="datetimepicker5" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input"
+                                        data-target="#datetimepicker5" />
+                                    <div class="input-group-append" data-target="#datetimepicker5"
+                                        data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="requests">Dodatkowe Informacje</label>
+                                <textarea id="requests" class="form-control" rows="3"
+                                    placeholder="Szczegóły dotyczące przyjazdu"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Wyślij zapytanie</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="circle" aria-hidden="true">
             <a href="#down">
                 <i class="arrow fas fa-angle-double-down"></i>
             </a>
         </div>
     </div>
-
+    <section class="findUs">
+        <div class="container">
+            <div class="row">
+                <div class="left col-6">
+                    <div id="map-container-google" class=" map-container">
+                        <iframe
+                            src="https://maps.google.com/maps?q=%C5%82eba%20portowa%201&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h2>Noclegi Bałtyk</h2>
+                    <h4 class="display-5">Skontaktuj się z nami</h4>
+                    <h5 class="display-7">Nasze dane kontaktowe</h5>
+                    <p>Telefon: +48 729 105 924 <br> Email: maciejnarejko@gmail.com
+                    </p>
+                    <div class="row">
+                        <div class="col-6 contactForm">
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Twoje Imie">
+                        </div>
+                        <div class="col-6 contactForm">
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Telefon">
+                        </div>
+                    </div>
+                    <div class="form-group contactForm">
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Email">
+                    </div>
+                    <div class="form-group contactForm">
+                        <textarea id="requests" class="form-control" rows="3"
+                            placeholder="Dodatkowe Informacje"></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Wyślij wiadomość</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer d-flex justify-content-center align-items-center">
+            2020 All rights reserved. Development by
+            <a id="author" href="https://github.com/MaciejNarejko/"> Maciej Narejko</a>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -74,6 +175,26 @@
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker4').datetimepicker({
+                defaultDate: moment(),
+                format: 'L'
+            });
+        });
+        $(function () {
+            $('#datetimepicker5').datetimepicker({
+                defaultDate: moment().add(1, 'day'),
+                format: 'L'
+            });
+        });
+    </script>
 </body>
 
 </html>
