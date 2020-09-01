@@ -1,3 +1,7 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 .navbar {
     font-weight: 100;
     position: absolute;
@@ -88,6 +92,46 @@ p.details {
     animation: arrow 1.5s infinite linear;
 }
 
+.fa-quote-left {
+    opacity: 0.8;
+}
+
+.description {
+    text-align: justify;
+    letter-spacing: 0.4;
+    margin-bottom: 5px;
+}
+
+.carousel .item {
+    height: 250px;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 250px;
+}
+
+img.d-block {
+    max-height: 360px;
+}
+
+.socialMedia i {
+    font-size: 50px;
+    margin-left: 20px;
+    color: #343a40;
+}
+
+.socialMedia i:hover {
+    color: #007bff;
+}
+
+h3#social {
+    margin-bottom: 30px;
+}
+
+
 @keyframes arrow {
     0% {
         transform: translateY(-20px);
@@ -134,7 +178,7 @@ a#author {
 }
 
 section.findUs {
-    padding: 20px 20px;
+    padding: 0 20px;
 }
 
 div.left {
@@ -149,10 +193,23 @@ div.left {
     background-color: #e9ecef;
 }
 
+div.find>div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+img.img-fluid {
+    margin-bottom: 30px;
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) {
     .nav-item {
         font-size: 1.2rem;
+    }
+
+    .navbar .nav-link:hover {
+        border-bottom: none;
     }
 
     .navbar-brand h3 {
@@ -167,13 +224,51 @@ div.left {
         font-size: 1.2rem;
 
     }
+
+    div.msg {
+        margin-top: 20px;
+    }
+
+    .map-container iframe {
+        height: 100%;
+        width: 100%;
+    }
+
+    div.footer {
+        font-size: 1rem;
+        height: 80px;
+    }
+
+    img.img-fluid {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        background-color: #007bff;
+    }
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (max-width: 992px) {
+    div.find>div {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+    div.row.gallery {
+        margin-bottom: 25px;
+    }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+    .head {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    div.msg {
+        margin-top: 20px;
+    }
+
+    img.img-fluid {
+        margin-bottom: 25px;
+    }
+}
