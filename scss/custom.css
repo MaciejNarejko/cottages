@@ -1,0 +1,221 @@
+body {
+  font-family: 'Lato', sans-serif; }
+
+.navbar {
+  font-weight: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3; }
+  .navbar .nav-item {
+    font-size: 1.8rem;
+    margin-left: 10px; }
+  .navbar .navbar-brand h3 {
+    font-size: 2rem;
+    font-weight: 100; }
+  .navbar .nav-link:hover {
+    transition: .2s;
+    border-bottom: 1px solid white; }
+
+#showcase {
+  background-image: url("../images/baltic-sea-4111719_1920.jpg");
+  background-repeat: no-repeat;
+  background-position: 60% 10%;
+  min-height: 100vh;
+  position: relative; }
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.circle {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 20px;
+  position: absolute;
+  bottom: 0; }
+
+i.arrow {
+  position: absolute;
+  font-size: 35px;
+  color: #909c9c;
+  top: 3px;
+  left: 7px; }
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+#count {
+  min-height: 20vh;
+  position: relative; }
+
+#timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+div.header p {
+  margin-top: 0;
+  text-align: center; }
+
+p.details {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-align: justify;
+  letter-spacing: 0.5px; }
+
+.arrow:hover {
+  color: white;
+  cursor: pointer; }
+
+.fa-angle-double-down {
+  animation: arrow 1.5s infinite linear; }
+
+.fa-quote-left {
+  opacity: 0.8; }
+
+.description {
+  text-align: justify;
+  letter-spacing: 0.4;
+  margin-bottom: 5px; }
+
+.carousel .item {
+  height: 250px; }
+
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 250px; }
+
+img.d-block {
+  max-height: 360px; }
+
+.socialMedia i {
+  font-size: 50px;
+  margin-left: 20px;
+  color: #343a40; }
+
+.socialMedia i:hover {
+  color: #007bff; }
+
+h3#social {
+  margin-bottom: 30px; }
+
+@keyframes arrow {
+  0% {
+    transform: translateY(-20px); }
+  50% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(20px); } }
+div.footer {
+  height: 105px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  background-color: #212529;
+  color: white; }
+
+a#author {
+  text-decoration: none;
+  color: white; }
+
+.map-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 435px; }
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  height: 435px;
+  width: 435px; }
+
+section.findUs {
+  padding: 0 20px; }
+
+div.left {
+  padding-left: 0; }
+
+.contactForm {
+  margin-bottom: 15px; }
+
+.form-control {
+  background-color: #e9ecef; }
+
+div.find > div {
+  padding-left: 0;
+  padding-right: 0; }
+
+img.img-fluid {
+  margin-bottom: 30px; }
+
+@media (max-width: 576px) {
+  .nav-item {
+    font-size: 1.2rem; }
+
+  .navbar .nav-link:hover {
+    border-bottom: none; }
+
+  .navbar-brand h3 {
+    font-size: 1.5rem; }
+
+  .display-1 {
+    font-size: 4rem; }
+
+  p.details {
+    font-size: 1.2rem; }
+
+  div.msg {
+    margin-top: 20px; }
+
+  .map-container iframe {
+    height: 100%;
+    width: 100%; }
+
+  div.footer {
+    font-size: 1rem;
+    height: 80px; }
+
+  img.img-fluid {
+    margin-bottom: 10px; }
+
+  nav {
+    background-color: #007bff; }
+
+  #timer {
+    margin-top: 80px; } }
+@media (max-width: 992px) {
+  div.find > div {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  div.row.gallery {
+    margin-bottom: 25px; }
+
+  .head {
+    display: none; } }
+@media (max-width: 767.98px) {
+  div.msg {
+    margin-top: 20px; }
+
+  img.img-fluid {
+    margin-bottom: 25px; } }
+
+/*# sourceMappingURL=custom.css.map */

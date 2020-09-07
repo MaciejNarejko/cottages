@@ -69,6 +69,18 @@ i.arrow {
     transform: translate(-50%, -50%);
 }
 
+#count {
+    min-height: 20vh;
+    position: relative;
+}
+
+#timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 div.header p {
     margin-top: 0;
     text-align: center;
@@ -130,7 +142,6 @@ img.d-block {
 h3#social {
     margin-bottom: 30px;
 }
-
 
 @keyframes arrow {
     0% {
@@ -245,6 +256,10 @@ img.img-fluid {
 
     nav {
         background-color: #007bff;
+    }
+
+    #timer {
+        margin-top: 80px;
     }
 }
 

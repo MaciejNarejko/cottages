@@ -25,8 +25,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ml-auto" data-toggle="modal" data-target="#checkTerm">
-                <li class="nav-item">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" data-toggle="modal" data-target="#checkTerm">
                     <a href="#" class="nav-link">
                         <i class="head fa fa-calendar-check" aria-hidden="true"></i> Sprawdź Termin
                     </a>
@@ -130,7 +130,7 @@
     <section id="slider">
         <div class="container mt-5">
             <div class="row">
-                <div class="col-12 col-md-7 mb-4">
+                <div class="col-12 col-lg-7 mb-4">
                     <div id="mainCarousel" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -159,7 +159,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-lg-5">
                     <h3>SLAJDY Z NAD MORZA</h3>
                     <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
                         omnis dolore. Vero quod fuga consectetur assumenda rerum, earum ipsum deleniti dolorum
@@ -169,6 +169,14 @@
                     <a href="#" class="more">See more</a>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="counter">
+        <div id="count" class="container text-center mt-5 col-12">
+            <h1>DO KOLEJNYCH WAKACJI ZOSTAŁO</h1>
+            <h1>
+                <div id="timer" class="col-12"></div>
+            </h1>
         </div>
     </section>
     <section id="quotes">
@@ -278,7 +286,7 @@
                         </div>
                     </div>
                     <div class="form-group contactForm">
-                        <input type="text" class="form-control" id="validationCustom02" placeholder="Email">
+                        <input type="text" class="form-control" id="validationCustom03" placeholder="Email">
                     </div>
                     <div class="form-group contactForm">
                         <textarea id="requests" class="form-control" rows="3"
@@ -300,7 +308,7 @@
     <footer>
         <div class="footer d-flex justify-content-center align-items-center mt-5">
             2020 All rights reserved. Development by
-            <a id="author" href="https://github.com/MaciejNarejko/"> Maciej Narejko</a>
+            <a id="author" href="https://github.com/MaciejNarejko/"> &nbsp;Maciej Narejko</a>
         </div>
     </footer>
 
@@ -310,7 +318,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
-    <script src="https://maciejnarejko.github.io/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script type="text/javascript"
@@ -330,6 +338,23 @@
                 format: 'L'
             });
         });
+    </script>
+    <script>
+        var countDownDate = new Date(2021, 06, 24).getTime();
+
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+        })
     </script>
 </body>
 
